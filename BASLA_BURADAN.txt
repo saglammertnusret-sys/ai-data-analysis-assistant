@@ -1,0 +1,33 @@
+AI VERİ ANALİZİ ASİSTANI — İLK KURULUM
+
+1. ZIP içindeki ai_data_assistant klasörünü şuraya çıkar:
+   C:\Users\elcsa\Desktop\projects\ai_data_assistant
+   Bu klasörün içinde app.py, requirements.txt, smoke_test.py ve sample_data görünmeli.
+
+2. PowerShell'de bu klasöre geç:
+   Set-Location "C:\Users\elcsa\Desktop\projects\ai_data_assistant"
+
+3. Yeni projeye ait sanal ortamı oluştur:
+   py -3 -m venv .venv
+
+4. Paketleri yükle (internet gerekir; ilk seferde birkaç dakika sürebilir):
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+5. API anahtarı olmadan test et:
+   .\.venv\Scripts\python.exe smoke_test.py
+   Beklenen: SMOKE TEST PASSED ve toplam gelir 20800.
+
+6. Uygulamayı başlat:
+   .\.venv\Scripts\python.exe -m streamlit run app.py
+   Tarayıcı kendiliğinden açılmazsa http://localhost:8501 adresini aç.
+   PowerShell açık kalmalı. Durdurmak için Ctrl+C.
+
+7. Açılan sayfada varsayılan Demo modunu ve örnek veriyi kullan:
+   "Bölgelere göre toplam geliri grafikle göster" sorusu seçili.
+   "Planı hazırla" -> planı incele -> "Analizi çalıştır".
+   Beklenen: Istanbul 8000; Ankara 6500; Izmir 6300.
+   Sonuç tablosu, grafik, JSON planı ve HTML raporu indirilebilir.
+
+Bu aşamada .env açmana veya API anahtarı almana gerek yok.
+Serbest doğal dil soruları için README_TR.md içindeki LLM kurulumuna geç.
+Anahtarını, .env dosyanı veya kişisel veri dosyanı sohbete gönderme.

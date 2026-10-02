@@ -1,0 +1,13 @@
+tarih,bolge,urun,adet,birim_fiyat,gelir
+2026-01-01,Ankara,Klavye,2,500,1000
+2026-01-01,Istanbul,Mouse,3,200,600
+2026-01-02,Ankara,Monitor,1,3000,3000
+2026-01-02,Izmir,Klavye,1,500,500
+2026-01-03,Istanbul,Monitor,2,3000,6000
+2026-01-03,Izmir,Mouse,4,200,800
+2026-01-04,Ankara,Mouse,5,200,1000
+2026-01-04,Istanbul,Klavye,2,500,1000
+2026-01-05,Izmir,Monitor,1,3000,3000
+2026-01-05,Ankara,Klavye,3,500,1500
+2026-01-06,Istanbul,Mouse,2,200,400
+2026-01-06,Izmir,Klavye,4,500,2000
